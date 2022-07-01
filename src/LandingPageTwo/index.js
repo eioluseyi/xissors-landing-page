@@ -20,7 +20,7 @@ export default () => {
 			<Testimonials />
 			<Download appName="Xcissors" showSuccess={true} />
 			<Footer />
-			<Link href="/version1">
+			<Link to="/version1">
 				<NextVersion title="View version 1" />
 			</Link>
 		</Container>
