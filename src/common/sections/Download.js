@@ -46,7 +46,9 @@ const Container = styled.div`
 	.appstore-download {
 		margin: auto;
 		margin-top: 3rem;
+		max-width: fit-content;
 		position: relative;
+
 		& > svg {
 			width: 19rem;
 		}
