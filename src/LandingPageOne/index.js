@@ -7,6 +7,7 @@ import Testimonials from "../common/sections/Testimonials";
 import Download from "../common/sections/Download";
 import Footer from "./sections/Footer";
 import NextVersion from "src/common/components/NextVersion";
+import { Link } from "react-router-dom";
 
 export default () => {
 	return (
