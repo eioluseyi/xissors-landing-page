@@ -8,6 +8,7 @@ import Download from "../common/sections/Download";
 import Footer from "./sections/Footer";
 import NextVersion from "src/common/components/NextVersion";
 import GradientBackgroundElements from "./components/GradientBackgroundElements";
+import { Link } from "react-router-dom";
 
 export default () => {
 	return (
@@ -19,7 +20,9 @@ export default () => {
 			<Testimonials />
 			<Download appName="Xcissors" showSuccess={true} />
 			<Footer />
-			<NextVersion title="View version 1" href="/version1" />
+			<Link href="/version1">
+				<NextVersion title="View version 1" />
+			</Link>
 		</Container>
 	);
 };

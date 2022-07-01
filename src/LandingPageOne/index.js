@@ -17,7 +17,9 @@ export default () => {
 			<Testimonials />
 			<Download appName="Xissors" />
 			<Footer />
-			<NextVersion title="View version 2" href="/version2" />
+			<Link href="/version1">
+				<NextVersion title="View version 2" href="/version2" />
+			</Link>
 		</Container>
 	);
 };
