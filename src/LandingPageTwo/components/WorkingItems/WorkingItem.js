@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import { COLORS } from "src/styles";
 
-export default ({ title, details, selected }) => (
+export default ({ title, details, img, selected }) => (
 	<Container selected={selected}>
+		<img className="icon" src={img} />
 		<h4 className="subtitle">{title}</h4>
 		<p className="subdetails">{details}</p>
 	</Container>
 );
 
 const Container = styled.div`
-	height: 60rem;
+	height: 20rem;
 	display: flex;
 	flex-direction: column;
 	min-width: 24rem;
@@ -18,8 +19,16 @@ const Container = styled.div`
 	border-radius: 2rem;
 	padding: 5.6rem 3rem;
 
-	background-color: ${({ selected }) =>
-		selected ? COLORS.white : "transparent"};
+	background-color: ${COLORS.white};
+
+	/* ${({ selected }) => (selected ? COLORS.white : "transparent")}; */
+
+	.icon {
+		width: 18rem;
+		position: relative;
+		top: -5rem;
+		margin: 0 auto;
+	}
 
 	.subtitle {
 		margin: auto 0 0;

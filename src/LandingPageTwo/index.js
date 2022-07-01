@@ -7,22 +7,24 @@ import Testimonials from "../common/sections/Testimonials";
 import Download from "../common/sections/Download";
 import Footer from "./sections/Footer";
 import NextVersion from "src/common/components/NextVersion";
+import GradientBackgroundElements from "./components/GradientBackgroundElements";
 
 export default () => {
 	return (
 		<Container>
+			<GradientBackgroundElements />
 			<Hero />
 			<HowItWorks />
 			<Clientele />
 			<Testimonials />
-			<Download appName="Xissors" />
+			<Download appName="Xcissors" showSuccess={true} />
 			<Footer />
-			<NextVersion title="View version 2" href="/version2" />
+			<NextVersion title="View version 1" href="/version1" />
 		</Container>
 	);
 };
 
 const Container = styled.div`
-	position: relative;
 	font-size: 18px;
+	position: relative;
 `;

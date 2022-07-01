@@ -1,29 +1,35 @@
 import styled from "styled-components";
-import GradientBackgroundElements from "../components/GradientBackgroundElements";
 import PhoneLayer from "../components/PhoneLayer";
 import WorkingItems from "../components/WorkingItems";
 import { COLORS } from "src/styles";
 
+import earnIcon from "../assets/howItWorksImages/earn.png";
+import collectIcon from "../assets/howItWorksImages/collect.png";
+import thriveIcon from "../assets/howItWorksImages/thrive.png";
+
 const workingItemsList = [
 	{
+		img: earnIcon,
 		title: "Earn",
 		details: "Earn a 40% commission on products you sell to your customers"
 	},
 	{
+		img: collectIcon,
 		title: "Collect",
 		details:
-			"No dongle or hardware needed. All you need to collect payments is your iphone"
+			"Collect payments with only a tap from your phone. No hardware needed"
 	},
 	{
+		img: thriveIcon,
 		title: "Thrive",
-		details: "Withdraw cash out of your account whenever you want"
+		details:
+			"Manage your earnings, customers and transactions, all from one app"
 	}
 ];
 
 export default () => (
 	<>
 		<Container>
-			<GradientBackgroundElements />
 			<PhoneLayer />
 			<div className="glass-container">
 				<h2 className="title">How it works</h2>
@@ -48,8 +54,8 @@ const Container = styled.div`
 		max-width: 128rem;
 		margin: 0 auto;
 		border-radius: 4rem;
-		background: rgba(255, 255, 255, 0.01);
-		backdrop-filter: blur(1rem);
+		background: #f7f5ff;
+		opacity: 0.8;
 	}
 
 	.title {
